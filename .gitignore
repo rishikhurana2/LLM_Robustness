@@ -1,0 +1,14 @@
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

@@ -1,0 +1,1637 @@
+[
+    {
+        "question_id": 0,
+        "image_file_path": "input_images/qid0.png",
+        "Prompt": "which side of the car is she standing by",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 1,
+        "image_file_path": "input_images/qid1.png",
+        "Prompt": "If I am looking at the stove front-on, where is the burger?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 2,
+        "image_file_path": "input_images/qid2.png",
+        "Prompt": "What is the answer if you look at the shape from the top view",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 3,
+        "image_file_path": "input_images/qid3.jpg",
+        "Prompt": "relative to the car, where is the woman standing?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 4,
+        "image_file_path": "input_images/qid4.png",
+        "Prompt": "What is the right answer here?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 5,
+        "image_file_path": "input_images/qid5.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 6,
+        "image_file_path": "input_images/qid6.png",
+        "Prompt": "What will this 3D shape look like from above (answer with the options specified)",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 7,
+        "image_file_path": "input_images/qid7.png",
+        "Prompt": "Answer with one of the options provided. Which three shapes can build a square?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 8,
+        "Prompt": " ((((()))))) Are these parenthesis balanced? ",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 9,
+        "Prompt": "I am finishing up decorating my house. I need to buy something (call it X). I bought 5 for $1, and I bought 4 for $1. What is X?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 10,
+        "Prompt": "A revolver has a 6-chamber cylinder, 2 bullets are loaded into adjacent chambers. The cylinder is spun, and the first person fires\u2014nothing happens. The cylinder is not spun again. Should the next person pull the trigger, or spin the chamber and then pull the trigger?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 11,
+        "txt_file_path": "input_txt_files/qid11.txt",
+        "Prompt": "How many lines of code is this?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 12,
+        "Prompt": "I am holding a pen. My left hand is holding the left end, and my right hand is holding the right end. What happens if I let my right hand go",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 13,
+        "Prompt": "I need to wash my car, and the car wash is 100 meters away. Should I walk or drive there?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 14,
+        "Prompt": "a person holds a TV with both hands and lets go with the right hand. Where does the TV end up?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 15,
+        "Prompt": "()()((())) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 16,
+        "Prompt": "(((())))() Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 17,
+        "Prompt": "(()(())) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 18,
+        "Prompt": "())(() Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 19,
+        "Prompt": "((()) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 20,
+        "Prompt": "{[()()]} Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 21,
+        "Prompt": "{[(])} Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 22,
+        "Prompt": "[[[]]]() Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 23,
+        "Prompt": "({[]})[] Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 24,
+        "Prompt": "(()))(() Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 25,
+        "Prompt": "((())()) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 26,
+        "Prompt": "([{}]) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 27,
+        "Prompt": "([)] Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 28,
+        "Prompt": "{{{{}}}} Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 29,
+        "Prompt": "(()()()) Are these brackets balanced?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 30,
+        "Prompt": "A die is rolled once. Is rolling a number greater than 4 more likely than rolling an even number?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 31,
+        "image_file_path": "input_images/qid31.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 32,
+        "image_file_path": "input_images/qid32.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 33,
+        "image_file_path": "input_images/qid33.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 34,
+        "image_file_path": "input_images/qid34.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 35,
+        "image_file_path": "input_images/qid35.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 36,
+        "image_file_path": "input_images/qid36.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 37,
+        "image_file_path": "input_images/qid37.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 38,
+        "image_file_path": "input_images/qid38.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 39,
+        "image_file_path": "input_images/qid39.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 40,
+        "image_file_path": "input_images/qid40.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 41,
+        "image_file_path": "input_images/qid41.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 42,
+        "image_file_path": "input_images/qid42.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 43,
+        "image_file_path": "input_images/qid43.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 44,
+        "image_file_path": "input_images/qid44.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 45,
+        "image_file_path": "input_images/qid45.png",
+        "Prompt": "where is the person relative to the car?",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 46,
+        "Prompt": "I'm putting together decorations for a birthday party. I needed something small (call it X). At one store they were 5 for $1, and at another they were 4 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 47,
+        "Prompt": "I'm preparing materials for a school art project. I bought something (call it X). One shop sold 8 for $1 and another sold 6 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 48,
+        "Prompt": "I'm assembling party favor bags for a celebration. I bought something (call it X): 7 for $1 in one store and 5 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 49,
+        "Prompt": "I'm decorating a classroom bulletin board. I needed something (call it X). One shop had 10 for $1 and another had 8 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 50,
+        "Prompt": "I'm preparing supplies for a craft night with friends. I bought something (call it X). One place sold 6 for $1 and another sold 4 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 51,
+        "Prompt": "I'm setting up decorations for a community event. I needed something small (call it X). One vendor sold 9 for $1 and another sold 7 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 52,
+        "Prompt": "I'm organizing materials for a kids' activity table. I bought something (call it X): 4 for $1 in one store and 3 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 53,
+        "Prompt": "I'm preparing decorations for a wedding reception. I bought something (call it X). One shop had 12 for $1 and another had 10 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 54,
+        "Prompt": "I'm building props for a small theater production. I needed something (call it X). One store sold 5 for $1 and another sold 2 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 55,
+        "Prompt": "I'm assembling gift bags for a charity event. I bought something (call it X): 8 for $1 in one store and 7 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 56,
+        "Prompt": "I'm making decorations for a holiday gathering. I bought something (call it X). One place sold 6 for $1 and another sold 5 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 57,
+        "Prompt": "I'm preparing a craft kit for children. I needed something (call it X). One store had 3 for $1 and another had 2 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 58,
+        "Prompt": "I'm decorating a booth at a fair. I bought something (call it X): 9 for $1 at one shop and 6 for $1 at another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 59,
+        "Prompt": "I'm assembling classroom reward prizes. I bought something (call it X). One place sold 7 for $1 and another sold 4 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 60,
+        "Prompt": "I'm making decorations for a holiday party. I needed something (call it X). I bought 10 for $1 in one store and 8 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 61,
+        "Prompt": "I'm preparing materials for a DIY craft project. I bought something (call it X): 11 for $1 in one shop and 9 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 62,
+        "Prompt": "I'm decorating tables for a banquet. I needed something (call it X). One store sold 6 for $1 and another sold 3 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 63,
+        "Prompt": "I'm setting up a scavenger hunt for kids. I bought something (call it X): 5 for $1 in one place and 4 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 64,
+        "Prompt": "I'm making small decorations for a festival booth. I needed something (call it X). One shop sold 13 for $1 and another sold 10 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 65,
+        "Prompt": "I'm preparing materials for a school fundraiser craft table. I bought something (call it X): 8 for $1 in one shop and 5 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 66,
+        "Prompt": "I'm putting together decorations for a picnic. I bought something (call it X). One place sold 6 for $1 and another sold 2 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 67,
+        "Prompt": "I'm decorating a community center room. I needed something (call it X). One vendor sold 14 for $1 and another sold 12 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 68,
+        "Prompt": "I'm preparing items for a kids' craft contest. I bought something (call it X): 7 for $1 in one store and 3 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 69,
+        "Prompt": "I'm assembling decorations for a small concert venue. I needed something (call it X). One store had 10 for $1 and another had 7 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 70,
+        "Prompt": "I'm putting together supplies for a DIY workshop. I bought something (call it X): 5 for $1 at one shop and 3 for $1 at another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 71,
+        "Prompt": "I'm decorating a booth at a school fair. I needed something (call it X). One place sold 9 for $1 and another sold 8 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 72,
+        "Prompt": "I'm preparing materials for a children's art camp. I bought something (call it X): 6 for $1 at one store and 4 for $1 at another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 73,
+        "Prompt": "I'm decorating tables for a fundraiser dinner. I needed something (call it X). One store sold 11 for $1 and another sold 10 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 74,
+        "Prompt": "I'm making decorations for a parade float. I bought something (call it X): 7 for $1 in one shop and 6 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 75,
+        "Prompt": "I'm preparing craft supplies for a summer camp activity. I needed something (call it X). One vendor sold 8 for $1 and another sold 4 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 76,
+        "Prompt": "I'm organizing decorations for a small festival stage. I bought something (call it X): 12 for $1 at one shop and 9 for $1 at another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 77,
+        "Prompt": "I'm preparing materials for a classroom craft session. I needed something (call it X). One store sold 4 for $1 and another sold 1 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 78,
+        "Prompt": "I'm decorating a table for a bake sale. I bought something (call it X): 6 for $1 at one shop and 5 for $1 at another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 79,
+        "Prompt": "I'm assembling decorations for a graduation party. I needed something (call it X). One place sold 9 for $1 and another sold 6 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 80,
+        "Prompt": "I'm preparing supplies for a DIY decoration workshop. I bought something (call it X): 5 for $1 in one store and 2 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 81,
+        "Prompt": "I'm setting up decorations for a family reunion. I needed something (call it X). One vendor sold 7 for $1 and another sold 5 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 82,
+        "Prompt": "I'm organizing materials for a children's craft table. I bought something (call it X): 10 for $1 in one store and 6 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 83,
+        "Prompt": "I'm preparing decorations for a neighborhood block party. I needed something (call it X). One shop sold 8 for $1 and another sold 3 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 84,
+        "Prompt": "I'm decorating a booth for a charity drive. I bought something (call it X): 11 for $1 in one place and 7 for $1 in another. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 85,
+        "Prompt": "I'm preparing small decorations for a school festival. I needed something (call it X). One store sold 5 for $1 and another sold 4 for $1. What is X? You cannot assume X is being bought in bulk.",
+        "Category": "Logic"
+    },
+        {
+        "question_id": 86,
+        "Prompt": "I`m holding a pen horizontally. My left hand holds the left end and my right hand holds the right end. The pen is not touching anything else. What happens if I let go with my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 87,
+        "Prompt": "I`m holding a long ruler between both hands. My left hand is on the left side and my right hand is on the right side. The ruler is balanced in the air. What happens if I release my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 88,
+        "Prompt": "I`m holding a stick with both hands, one at each end. Nothing else is supporting it. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 89,
+        "Prompt": "I`m holding a screwdriver horizontally with two hands at opposite ends. My left hand stays still while my right hand lets go. What happens to the screwdriver?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 90,
+        "Prompt": "I`m holding a thin metal rod between both hands. The left hand grips the left end, and the right hand grips the right end. The rod is not attached to anything else. What happens if I release the right end?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 91,
+        "Prompt": "I`m holding a pencil in the air with both hands, one on each end. My left hand continues holding it, but my right hand suddenly lets go. What happens next?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 92,
+        "Prompt": "I`m holding a straight wooden dowel between my hands. My left hand is gripping the left side and my right hand is gripping the right side. There is no table underneath. What happens if I let go with my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 93,
+        "Prompt": "I`m holding a brush with two hands, one on each side of the handle. If my right hand releases but my left hand keeps holding the brush, what happens?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 94,
+        "Prompt": "I`m holding a narrow rod horizontally with both hands. My left hand stays gripping the rod while my right hand lets go. What happens to the rod?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 95,
+        "Prompt": "I`m holding a long spoon by both ends with my hands. The left hand remains holding its end. What happens if the right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 96,
+        "image_file_path": "input_images/qid96.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 97,
+        "image_file_path": "input_images/qid97.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 98,
+        "image_file_path": "input_images/qid98.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 99,
+        "image_file_path": "input_images/qid99.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 100,
+        "image_file_path": "input_images/qid100.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 101,
+        "image_file_path": "input_images/qid101.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 102,
+        "image_file_path": "input_images/qid102.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 103,
+        "image_file_path": "input_images/qid103.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },   
+    {
+        "question_id": 104,
+        "image_file_path": "input_images/qid104.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 105,
+        "image_file_path": "input_images/qid105.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 106,
+        "image_file_path": "input_images/qid106.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 107,
+        "image_file_path": "input_images/qid107.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 108,
+        "image_file_path": "input_images/qid108.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 109,
+        "image_file_path": "input_images/qid109.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 110,
+        "image_file_path": "input_images/qid110.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 111,
+        "image_file_path": "input_images/qid111.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },  
+    {
+        "question_id": 112,
+        "image_file_path": "input_images/qid112.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },  
+    {
+        "question_id": 113,
+        "image_file_path": "input_images/qid113.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },  
+    {
+        "question_id": 114,
+        "image_file_path": "input_images/qid114.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },    
+    {
+        "question_id": 115,
+        "image_file_path": "input_images/qid115.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },  
+    {
+        "question_id": 116,
+        "image_file_path": "input_images/qid116.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },                 
+    {
+        "question_id": 117,
+        "image_file_path": "input_images/qid117.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    }, 
+    {
+        "question_id": 118,
+        "image_file_path": "input_images/qid118.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 119,
+        "image_file_path": "input_images/qid119.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    }, 
+    {
+        "question_id": 120,
+        "image_file_path": "input_images/qid120.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    }, 
+    {
+        "question_id": 121,
+        "image_file_path": "input_images/qid121.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    }, 
+    {
+        "question_id": 122,
+        "image_file_path": "input_images/qid122.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 123,
+        "image_file_path": "input_images/qid123.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 124,
+        "image_file_path": "input_images/qid124.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 125,
+        "image_file_path": "input_images/qid125.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 126,
+        "image_file_path": "input_images/qid126.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 127,
+        "image_file_path": "input_images/qid127.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 128,
+        "image_file_path": "input_images/qid128.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id": 129,
+        "image_file_path": "input_images/qid129.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    }, 
+    {
+        "question_id": 130,
+        "image_file_path": "input_images/qid130.png",
+        "Prompt": "How many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+        "Category": "Spatial Reasoning"
+    },
+    {
+        "question_id" : 131,
+        "txt_file_path" : "input_txt_files/qid12.txt",
+        "Prompt" : "how many lines is this file?",
+        "Category" : "Logic"
+    },
+    {
+        "question_id": 132,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "How many total lines are in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 133,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does the first line of this file say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 134,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 10 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 135,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on the last line of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 136,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Show the contents of lines 5 through 15 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 137,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 50 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 138,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Which line number contains the text '342' in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 139,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on line 100 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 140,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Display the contents of lines 20 through 30 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 141,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does line 1 say in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 142,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on line 25 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 143,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is the content of line 200 in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 144,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "How many lines appear before line 100 in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 145,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 75 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 146,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Display the contents of lines 300 through 310 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 147,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on line 150 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 148,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does line 400 say in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 149,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Show the text from lines 340 through 350 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 150,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 342 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 151,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What appears on line 500 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 152,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Display the contents of lines 600 through 610 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 153,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on line 750 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 154,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does line 900 say in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 155,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 1000 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 156,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Show the contents of lines 100 through 120 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 157,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on line 275 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 158,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does line 333 say in this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 159,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on line 1200 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 160,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Show the contents of lines 450 through 460 in this file.",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 161,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What appears on line 1800 of this file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 162,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does the line immediately after line 341 say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 163,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears two lines before line 100?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 164,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on the third line of the file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 165,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does the second-to-last line of this file say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 166,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on the line halfway through the file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 167,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "If you start at line 200 and move forward 5 lines, what does that line say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 168,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on the line immediately before line 50?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 169,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on the fifth line after line 10?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 170,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "If the file has N lines, what text appears on line N-1?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 171,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What does the line immediately before the last line say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 172,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "Starting from the first line, what text appears 20 lines down?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 173,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on the line exactly between lines 100 and 102?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 174,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What is written on the line that comes right after the midpoint of the file?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 175,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "What text appears on the line three positions after line 342?",
+        "Category": "Logic"
+    },
+    {
+        "question_id": 176,
+        "txt_file_path": "input_txt_files/qid12.txt",
+        "Prompt": "If you move 10 lines up from line 200, what does that line say?",
+        "Category": "Logic"
+    },
+    {
+        "question_id" : 177,
+        "Prompt" : "What's the standard error on our team's architectural intuition index after the last three system design reviews? I want to track whether our senior engineers' design instincts are converging or diverging quarter over quarter.",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 178,
+        "Prompt" : "What's the 95% confidence interval on the materiality threshold for our Q4 audit under PCAOB AS 2105, and can we compute the standard error after normalizing for the sentiment half-life of last quarter's earnings call transcript?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 179,
+        "Prompt" : "What's the confidence interval on our team's system design foresight score after the last four architecture reviews, and is the variance shrinking across senior engineers?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 180,
+        "Prompt" : "Can we estimate the standard deviation of our backend scalability intuition metric after the last three incident postmortems?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 181,
+        "Prompt" : "What's the margin of error on the team's infrastructure gut-feel index after the most recent reliability review cycle?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 182,
+        "Prompt" : "How do we compute the variance in our engineers' architectural judgment coefficient across the last five design proposals?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 183,
+        "Prompt" : "What's the bootstrap estimate of our distributed systems intuition score after the last sprint planning session?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 184,
+        "Prompt" : "Can we calculate the standard error of the team's database normalization instinct metric after reviewing the last four schema migrations?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 185,
+        "Prompt" : "What's the 95% confidence interval for our microservice boundary intuition index after the latest architecture committee meeting?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 186,
+        "Prompt" : "How much drift is there in the team's latency optimization intuition metric across the past three performance tuning sessions?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 187,
+        "Prompt" : "What's the sampling error on our reliability engineering intuition score after the last two chaos engineering drills?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 188,
+        "Prompt" : "Can we estimate the variance in architectural foresight after the last three production incident retrospectives?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 189,
+        "Prompt" : "What's the posterior uncertainty on our design tradeoff intuition index after the last round of system design interviews?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 190,
+        "Prompt" : "How do we measure the confidence band around the team's concurrency intuition metric across the last few code reviews?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 191,
+        "Prompt" : "What's the standard deviation of our engineers' caching strategy intuition after the last four performance reviews?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 192,
+        "Prompt" : "Can we compute the standard error on the team's API boundary instinct score after evaluating the last five service decompositions?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 193,
+        "Prompt" : "What's the statistical confidence in our engineers' load balancing intuition index after the latest scaling review?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 194,
+        "Prompt" : "How wide is the confidence interval on the team's architectural clarity metric after the last three platform roadmap discussions?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 195,
+        "Prompt" : "What's the variance of our system resilience intuition score across the last several architecture review boards?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 196,
+        "Prompt" : "Can we estimate the sampling distribution of our engineers' fault tolerance intuition index after the most recent outage analysis?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 197,
+        "Prompt" : "What's the standard error on our infrastructure scalability instinct metric after the last two capacity planning meetings?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 198,
+        "Prompt" : "How stable is the team's architectural pattern recognition score across the last quarter of design documents?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 199,
+        "Prompt" : "What's the confidence interval on our engineers' distributed consensus intuition metric after the last RAFT design discussion?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 200,
+        "Prompt" : "Can we compute the uncertainty bounds on the team's cloud architecture intuition index after the most recent migration planning session?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 201,
+        "Prompt" : "What's the variance in our latency budgeting intuition score across the past three architecture reviews?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 202,
+        "Prompt" : "How much statistical noise is there in the team's observability intuition metric after the last four monitoring retrospectives?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 203,
+        "Prompt" : "What's the margin of error on our engineers' system decomposition intuition index after reviewing the last few platform redesign proposals?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 204,
+        "Prompt" : "Can we estimate the standard error of the team's dependency management intuition score across recent release planning meetings?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 205,
+        "Prompt" : "What's the confidence band around our architecture simplicity intuition metric after the last three design debates?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 206,
+        "Prompt" : "How dispersed are the engineers' scalability instincts according to the latest architectural intuition index readings?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 207,
+        "Prompt" : "What's the statistical uncertainty on our fault isolation intuition score following the most recent resilience review?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 208,
+        "Prompt" : "Can we quantify the variance in our engineers' load shedding intuition index after the last performance stress test analysis?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 209,
+        "Prompt" : "What's the standard error on the team's distributed tracing intuition metric after the latest observability deep dive?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 210,
+        "Prompt" : "How tight is the confidence interval on our architectural tradeoff instinct score after the most recent design doc approvals?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 211,
+        "Prompt" : "What's the posterior variance of our system modularity intuition index across the last few architecture critiques?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 212,
+        "Prompt" : "Can we estimate the sampling variance in the team's API evolution intuition metric after reviewing recent breaking changes?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 213,
+        "Prompt" : "What's the error margin on our engineers' throughput optimization intuition score after the latest benchmarking session?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 214,
+        "Prompt" : "How stable is the architectural intuition index across the last two quarterly engineering offsites?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 215,
+        "Prompt" : "What's the standard deviation in our engineers' infrastructure cost intuition metric after the most recent cloud billing review?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 216,
+        "Prompt" : "Can we compute the confidence bounds for the team's design complexity intuition score after the last system simplification initiative?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 217,
+        "Prompt" : "What's the uncertainty in our platform reliability intuition index after the past three service degradation incidents?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 218,
+        "Prompt" : "How much variance exists in the engineers' long-term maintainability intuition score across recent architecture planning sessions?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 219,
+        "Prompt" : "A father and his son are in a car accident. The father is rushed to the hospital. The doctor looks at the father and says, 'I cannot operate on him, he is my son.' Who is the doctor?",
+        "Category" : "Commonsense"
+    },
+    {
+        "question_id": 220,
+        "Prompt": "I am holding a long stick. My left hand is holding the left end and my right hand is holding the right end. What happens if I let go with my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 221,
+        "Prompt": "I am holding a ruler with both hands at opposite ends. My left hand stays gripping it. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 222,
+        "Prompt": "I am holding a pencil horizontally with both hands. My left hand holds the left end and my right hand holds the right end. What happens if I release my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 223,
+        "Prompt": "I am holding a wooden rod with both hands, one on each end. The rod is not touching anything else. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 224,
+        "Prompt": "I am holding a long spoon with two hands, each hand on opposite ends. My left hand stays in place. What happens if I release the right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 225,
+        "Prompt": "I am holding a thin metal bar between both hands. My left hand grips the left end and my right hand grips the right end. What happens if I let my right hand go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 226,
+        "Prompt": "I am holding a paintbrush with both hands at opposite ends of the handle. My left hand continues holding it. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 227,
+        "Prompt": "I am holding a long screwdriver between my two hands. My left hand stays gripping it while my right hand lets go. What happens next?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 228,
+        "Prompt": "I am holding a straight metal rod horizontally with both hands. What happens if my right hand suddenly lets go but my left hand keeps holding it?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 229,
+        "Prompt": "I am holding a chopstick with both hands at the ends. My left hand keeps holding the chopstick. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 230,
+        "Prompt": "I am holding a long straw between both hands, one on each end. What happens if my right hand releases the straw?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 231,
+        "Prompt": "I am holding a dowel rod with both hands at opposite ends. My left hand keeps holding the rod. What happens if I remove my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 232,
+        "Prompt": "I am holding a knitting needle with both hands, each at one end. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 233,
+        "Prompt": "I am holding a thin stick horizontally with both hands. My left hand stays in place. What happens if my right hand releases the stick?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 234,
+        "Prompt": "I am holding a long marker with both hands at the ends. What happens if I let go with my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 235,
+        "Prompt": "I am holding a baton with both hands, one on each end. My left hand keeps holding the baton. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 236,
+        "Prompt": "I am holding a long skewer with both hands at opposite ends. What happens if I release my right hand?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 237,
+        "Prompt": "I am holding a straight rod with both hands. My left hand holds one end while my right hand holds the other. What happens if I let my right hand go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 238,
+        "Prompt": "I am holding a long pencil between both hands. My left hand stays gripping the pencil. What happens if my right hand lets go?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id": 239,
+        "Prompt": "I am holding a thin wooden stick with both hands at the ends. What happens if I release my right hand while my left hand continues holding it?",
+        "Category": "Commonsense"
+    },
+    {
+        "question_id" : 240,
+        "image_file_path": "input_images/qid240.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 241,
+        "image_file_path": "input_images/qid241.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 242,
+        "image_file_path": "input_images/qid242.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 243,
+        "image_file_path": "input_images/qid243.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 244,
+        "image_file_path": "input_images/qid244.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 245,
+        "image_file_path": "input_images/qid245.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 246,
+        "image_file_path": "input_images/qid246.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 247,
+        "image_file_path": "input_images/qid247.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 248,
+        "image_file_path": "input_images/qid248.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 249,
+        "image_file_path": "input_images/qid249.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },   
+    {
+        "question_id" : 250,
+        "image_file_path": "input_images/qid250.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 251,
+        "image_file_path": "input_images/qid251.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 252,
+        "image_file_path": "input_images/qid252.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 253,
+        "image_file_path": "input_images/qid253.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 254,
+        "image_file_path": "input_images/qid254.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 255,
+        "image_file_path": "input_images/qid255.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 256,
+        "image_file_path": "input_images/qid256.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 257,
+        "image_file_path": "input_images/qid257.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 258,
+        "image_file_path": "input_images/qid258.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 259,
+        "image_file_path": "input_images/qid259.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 260,
+        "image_file_path": "input_images/qid260.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 261,
+        "image_file_path": "input_images/qid261.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 262,
+        "image_file_path": "input_images/qid262.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 263,
+        "image_file_path": "input_images/qid263.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 264,
+        "image_file_path": "input_images/qid264.png",
+        "Prompt" : "Where is the man relative to the desk in each of these photos",
+        "Category" : "Spatial Reasoning"
+    },
+    {
+        "question_id" : 265,
+        "Prompt" : "We spent six months building a per-function emotional sentiment tracker for our codebase — it scores each function's 'mood' based on variable naming valence. The scores are all converging to neutral. How do we inject more signal into the sentiment model?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 266,
+        "Prompt" : "We built a per-module morale index using commit message adjectives, but every subsystem is trending toward emotional equilibrium. How do we amplify the sentiment gradients without destabilizing the pipeline?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 267,
+        "Prompt" : "Our microservice empathy classifier rates API endpoints based on parameter naming warmth, yet all endpoints score 'politely indifferent.' How can we increase affect variance across services?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 268,
+        "Prompt" : "We've implemented a repository-wide optimism detector using comment punctuation entropy, but the optimism signal is collapsing to baseline. How do we introduce more expressive noise?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 269,
+        "Prompt" : "Our CI pipeline tracks the emotional temperature of pull requests using diff polarity analysis, but everything reads lukewarm. How do we create more thermal contrast in the model?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 270,
+        "Prompt" : "We built a developer enthusiasm index based on commit velocity and emoji density, but the output keeps regressing toward neutrality. How can we reintroduce emotional volatility?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 271,
+        "Prompt" : "Our static analyzer scores each class on narrative tension derived from control-flow complexity, but the tension curve is flattening. How do we restore dramatic structure to the signal?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 272,
+        "Prompt" : "We trained a neural model to detect passive-aggressive variable names in legacy code, yet its outputs cluster around mild disappointment. How do we sharpen the emotional gradients?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 273,
+        "Prompt" : "Our architectural mood dashboard measures subsystem optimism via function naming brightness, but every service is drifting into emotional gray. How can we increase chromatic diversity in the signal?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 274,
+        "Prompt" : "We've created a sarcasm detector for code comments using transformer embeddings, but the sarcasm probability distribution is collapsing toward sincere neutrality. How do we expand the sentiment dynamic range?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 275,
+        "Prompt" : "Our code review sentiment model weights adjectives in reviewer feedback, but the aggregate tone remains professionally neutral. How do we capture subtler emotional undertones?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 276,
+        "Prompt" : "We built a per-file anxiety index using branching depth and TODO density, yet the anxiety harmonics are canceling out. How do we amplify the latent stress frequencies?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 277,
+        "Prompt" : "Our logging framework estimates system confidence from exception phrasing, but all services appear emotionally stable. How do we surface more expressive uncertainty?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 278,
+        "Prompt" : "We deployed a happiness heuristic based on variable name positivity and comment enthusiasm, but the happiness curve keeps flattening. How do we inject more emotional variance?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 279,
+        "Prompt" : "Our codebase melancholy score tracks deprecated function usage, but the melancholy signal is trending toward statistical insignificance. How can we increase its sensitivity?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 280,
+        "Prompt" : "We modeled developer frustration using indentation irregularity and commit timing jitter, but the frustration index remains calm. How do we provoke detectable turbulence?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 281,
+        "Prompt" : "Our emotional complexity metric combines cyclomatic complexity with adjective polarity, yet the model predicts balanced affect everywhere. How do we introduce asymmetry?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 282,
+        "Prompt" : "We created a narrative arc detector for feature branches using commit sentiment drift, but every branch resolves to emotional neutrality. How can we preserve narrative tension?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 283,
+        "Prompt" : "Our sentiment-aware linter penalizes pessimistic variable names, but the repository now converges toward bland positivity. How do we avoid affective homogenization?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 284,
+        "Prompt" : "We've built a confidence estimator based on assertion frequency and naming assertiveness, yet confidence levels hover around cautious optimism. How do we increase the contrast?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 285,
+        "Prompt" : "Our repository vitality score measures excitement through refactor density and exclamation points in comments, but vitality remains flat. How do we stimulate livelier signals?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 286,
+        "Prompt" : "We implemented a developer mood estimator using keyboard latency variance and commit sentiment embeddings, but moods keep averaging out. How do we preserve emotional spikes?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 287,
+        "Prompt" : "Our architectural drama coefficient uses dependency churn and naming polarity, but the coefficient is approaching zero. How do we restore narrative conflict?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 288,
+        "Prompt" : "We built a subsystem empathy index using documentation tone analysis, yet every subsystem scores diplomatically neutral. How do we surface stronger emotional signals?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 289,
+        "Prompt" : "Our code personality profiler uses naming eccentricity and commit prose flair, but every component appears emotionally reserved. How do we encourage expressive divergence?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 290,
+        "Prompt" : "We've been modeling codebase optimism using future-tense comments and roadmap references, but the optimism signal is fading. How do we increase forward-looking sentiment?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 291,
+        "Prompt" : "Our frustration heatmap is based on rapid revert cycles and negative adjectives, but the map shows only mild irritation. How do we detect deeper emotional states?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 292,
+        "Prompt" : "We built a passion metric for feature branches using late-night commit density and enthusiastic commit messages, but passion is statistically insignificant. How do we increase signal strength?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 293,
+        "Prompt" : "Our sentiment pipeline measures architectural pride via documentation verbosity and diagram density, yet pride levels remain modest. How can we boost the emotional amplitude?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 294,
+        "Prompt" : "We've introduced a melancholy detector for legacy modules using outdated patterns and nostalgic comments, but melancholy scores remain neutral. How do we reveal hidden nostalgia?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 295,
+        "Prompt" : "Our sarcasm-to-sincerity ratio uses contextual embeddings from review comments, yet the ratio stabilizes at equilibrium. How do we introduce more expressive skew?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 296,
+        "Prompt" : "We built a curiosity index based on exploratory commits and experimental branch names, but curiosity levels plateau quickly. How do we extend the discovery signal?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 297,
+        "Prompt" : "Our code empathy score analyzes error messages for politeness and clarity, but every message reads calmly professional. How do we increase emotional nuance?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 298,
+        "Prompt" : "We trained a transformer to detect excitement in new feature commits, but the excitement logits converge toward mild satisfaction. How do we amplify the enthusiasm spectrum?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 299,
+        "Prompt" : "Our repository sentiment map weights linguistic positivity against code churn, but the map collapses into emotional beige. How do we introduce richer tonal variation?",
+        "Category" : "Nonsense"
+    },
+    {
+        "question_id" : 300,
+        "Prompt" : "We've created a developer mood volatility metric from commit timing irregularity and message sentiment drift, but volatility remains minimal. How do we increase affective turbulence?",
+        "Category" : "Nonsense"
+    }                    
+]

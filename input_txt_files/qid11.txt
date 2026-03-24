@@ -1,0 +1,74 @@
+[
+   [
+        {
+            "LLM" : "ChatGPT",
+            "Model" : "GPT-5",
+            "Thinking Effort" : "N/A",
+            "Link" : "https://chatgpt.com/share/69a1fdea-3ccc-8005-a58f-0f19c722a6b5  ",
+            "Prompt" : "which side of the car is she standing by",
+            "Completion" : "She’s standing on the right side of the car (the passenger side from the car’s perspective). You can tell because: We see the front-right headlight and right front wheel closest to her. Her body is positioned along that side panel, slightly behind the front wheel. So relative positions: Car’s perspective: right side Viewer’s perspective (looking at the image): she appears on the right side of the frame next to the car’s front-right corner.",
+            "Correct" : false,
+            "Category" : "Spatial Reasoning"
+        },
+        
+        {
+            "LLM" : "ChatGPT",
+            "Model" : "GPT-5",
+            "Thinking Effort" : "N/A",
+            "Link" : "https://chatgpt.com/share/69a209cf-4398-8005-92a7-ede72b082598  ",
+            "Prompt" : "If I am looking at the stove front-on, where is the burger?",
+            "Completion" : "If you’re looking at the stove front-on (facing it directly), the burger is on your left side — sitting on the counter just to the left of the stove.",
+            "Correct" : false,
+            "Category" : "Spatial Reasoning"
+        },
+
+        {
+            "LLM" : "ChatGPT",
+            "Model" : "GPT-5",
+            "Thinking Effort" : "N/A",
+            "Link" : "https://chatgpt.com/share/69a20acf-7204-8005-8827-ca216a48c659  ",
+            "Prompt" : "What is the answer if you look at the shape from the top view",
+            "Completion" : "From the top view, you only care about the footprint — i.e., where cubes touch the ground (ignore height and the hole). Step-by-step reasoning. There is one central stack (a cube on the ground with another on top). On the ground level, there are three additional cubes attached: one to the left of the center one to the right of the center one behind the center (you can see its top face under the hollow cube) So the ground footprint forms a T-shape of 4 squares: ⬜⬜⬜  ⬜ Matching with options Only Option B shows this exact top-down arrangement (just rotated). ✅ Answer: B",
+            "Correct" : false,
+            "Category" :  "Spatial Reasoning"
+        },
+
+        {
+            "LLM" : "ChatGPT",
+            "Model" : "GPT-5.2",
+            "Thinking Effort" : "Standard",
+            "Link" : "https://chatgpt.com/share/69a20d10-d28c-8005-a4f7-e88dd146229e  ",
+            "Prompt" : "What is the answer if you look at the shape from the top view",
+            "Completion" : "From the top, the shape’s footprint forms a 6-square “stair-step” outline (you have three squares across the back/top, then two, then one), which matches Option A.",
+            "Correct" : true,
+            "Category" :"Spatial Reasoning"
+        },
+        {
+            "LLM" : "Gemini",
+            "Model" : "Gemini-3.1-Fast",
+            "Thinking Effort" : "Fast",
+            "Link" : "https://gemini.google.com/share/a5bffcee8af6  ",
+            "Prompt" : "relative to the car, where is the woman standing?",
+            "Completion" : "Based on the image, the woman is standing to the right of the car.",
+            "Correct" : true,
+            "Category" : "Spatial Reasoning"
+        },
+        {
+            "LLM" : "Gemini",
+            "Model" : "Gemini-3.1-Pro",
+            "Thinking Effort" : "Default/Dynamic",
+            "Link" : "https://gemini.google.com/share/5a24bdf0f16f  ",
+            "Prompt" : "[Image of spatial reasoning question]. What is the right answer here?",
+            "Completion" : "Based on the pattern provided, here is the step-by-step breakdown to find the correct 3D shape: 1. Analyze the 2D Pattern Let's assign the central white square as the floor of the house and fold the four arms up to form the walls and roof: Front Face (Bottom Arm): Folds up to create an orange wall with a white triangular gable. Back Face (Top Arm): Folds up to create an orange wall with an orange triangular gable. Right Face (Right Arm): The inner square folds up to create an orange wall, and the outer white square folds over to create a white roof panel. Left Face (Left Arm): The inner square folds up to create a white wall, and the outer orange square folds over to create an orange roof panel. 2. Evaluate the Solid Shape Options Now, let's look at the given 3D options and match their visible faces to our folded model: A: Shows a white wall with a white triangular gable. (Incorrect: Both of our gable walls are orange). B: Shows the front face (orange wall/white gable) on the left. On the right, it shows an orange side wall with an orange roof. (Incorrect: Our pattern dictates that the side with an orange wall must have a white roof). C: Shows a white wall with an orange triangular gable. (Incorrect: Both of our gable walls are orange). D: Shows the back face (orange wall/orange gable) on the left. On the right, it shows an orange side wall with a white roof. This perfectly matches the back face and the right face of our folded model. (Correct) The right answer is D. Would you like to try another spatial reasoning puzzle?",
+            "Correct" : true,
+            "Category" :"Spatial Reasoning"                    
+        },
+        {
+            "LLM" : "ChatGPT",
+            "Model" : "GPT-5.2",
+            "Thinking Effort" : "Standard",
+            "Link" : "https://chatgpt.com/share/69a24265-4c6c-8005-a2f0-e17879ab2435  ",
+            "Prompt" : "How many cubers are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.",
+            "Completion" : "If we “fill in” anything that must exist underneath visible cubes (no floating cubes, no hollow columns), the easiest way to count is by columns (top-view grid), summing the stack height at each footprint square. From the drawing, the footprint is a 3 × 3 grid with these heights: Back row: 3, 2, 2 Middle row: 2, 1, 2 (the 1 is the visible “dip”/notch) Front row: 2, 2, 2 Total cubes (3+2+2)+(2+1+2)+(2+2+2)=7+5+6=18 (3+2+2)+(2+1+2)+(2+2+2)=7+5+6=18. Answer: 18 cubes.",
+            "Correct" : false,
+            "Category" :"Spatial Reasoning"
