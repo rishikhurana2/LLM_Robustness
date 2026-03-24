@@ -14,6 +14,7 @@ pip install -r requirements.txt
 ## Run the benchmarks
 
 ```bash
+cd src
 python3 main.py --llm [llm] --output [file location (optional)]
 ```
 llms supported as of now are chatgpt, gemini, claude, and qwen. 
