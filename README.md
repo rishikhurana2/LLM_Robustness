@@ -2,7 +2,7 @@
 
 LLM research project that is a dataset and benchmark for testing several failure modes of frontier LLMs. 
 
-questions.json file contaisns 301 questions that test failure mechanisms of LLMs; each entry in the json contains: question_id, Prompt, and Category. If an image is used in a prompt, then the json entry will contain an image_file_path entry. If a txt file is used, then the json entry wll contain a txt_file_path entry.
+questions.json file contains 301 questions that test failure mechanisms of LLMs; each entry in the json contains: question_id, Prompt, and Category. If an image is used in a prompt, then the json entry will contain an image_file_path entry. If a txt file is used, then the json entry wll contain a txt_file_path entry.
 
 The src folder contains the src code that runs the questions.json file against several LLMs. The benchmark functions are in benchmarks.py, and main.py calls the benchmark functions with the LLM specified from user input.
 
