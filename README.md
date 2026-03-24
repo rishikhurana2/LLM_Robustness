@@ -1,6 +1,6 @@
 # FailBench
 
-Dataset and benchmark that tests several categories of failure modes for LLMs. 
+LLM research project that is a dataset and benchmark for testing several failure modes of frontier LLMs.
 
 ## Setup
 
