@@ -16,11 +16,17 @@ pip install -r requirements.txt
 ```
 
 ## Run the benchmarks
+Ensure that you have a .env file that specifies the needed API keys:
 
+OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, DASHSCOPE_API_KEY
+
+(DASHSCOPE_API_KEY is for Qwen)
+
+Then, run the following:
 ```bash
 cd src
-python3 main.py --llm [llm] --output [file location (optional)]
+python3 main.py --llm [llm] --output [file location]
 ```
-LLMs supported as of now are chatgpt, gemini, claude, and qwen. 
+LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag is optional and only specify it if you do not want to save benchmark outputs in the default directory.
 
 Ensure you have a FailBench/Answers folder to store the output of the benchmarks. If you want to store the answers elsewhere, be sure to add an argument for the --output flag.
