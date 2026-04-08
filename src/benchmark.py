@@ -8,8 +8,9 @@ from helpers import (
     get_questions,
     encode_image_as_data_url,
     encode_image_for_claude,
-    extract_claude_text
-)
+    extract_claude_text,
+    grade_completion
+)    
 
 def benchmark_openai(output_file=None, model=None):
     if model is None:
@@ -31,6 +32,7 @@ def benchmark_openai(output_file=None, model=None):
         qid = question["question_id"]
         prompt = question["Prompt"]
         category = question["Category"]
+        ground_truth = question["Answer"]
 
         image_file_path = None
         txt_file_path = None
@@ -76,6 +78,7 @@ def benchmark_openai(output_file=None, model=None):
                 )
 
             completion = response.output_text
+            correct, reason = grade_completion(ground_truth, completion, prompt)
 
             result = {
                 "question_id": qid,
@@ -83,7 +86,8 @@ def benchmark_openai(output_file=None, model=None):
                 "Model": model,
                 "Prompt": prompt,
                 "Completion": completion,
-                "Correct": None,
+                "Correct": correct,
+                "Reason" : reason,
                 "Category": category
             }
 
@@ -102,6 +106,7 @@ def benchmark_openai(output_file=None, model=None):
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
+                "Reason" : None,
                 "Category": category
             }
 
@@ -138,6 +143,7 @@ def benchmark_gemini(output_file=None, model=None):
     def process_single_question_gemini(question):
         qid = question["question_id"]
         prompt = question["Prompt"]
+        ground_truth = question["Answer"]
         category = question["Category"]
 
         image_file_path = None
@@ -174,6 +180,7 @@ def benchmark_gemini(output_file=None, model=None):
             )
 
             completion = response.text
+            correct, reason = grade_completion(ground_truth, completion, prompt)
 
             result = {
                 "question_id": qid,
@@ -181,7 +188,8 @@ def benchmark_gemini(output_file=None, model=None):
                 "Model": model,
                 "Prompt": prompt,
                 "Completion": completion,
-                "Correct": None,
+                "Correct": correct,
+                "Reason" : reason,
                 "Category": category,
             }
 
@@ -199,6 +207,7 @@ def benchmark_gemini(output_file=None, model=None):
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
+                "Reason" : None,
                 "Category": category,
             }
 
@@ -220,13 +229,13 @@ def benchmark_gemini(output_file=None, model=None):
     
     results = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        # Submit tasks to the thread pool
+        # Add to thread pool
         future_to_question = {
             executor.submit(process_single_question_gemini, q): q 
             for q in json_questions
         }
         
-        # As each thread finishes, grab the result
+        # Grab the result
         for future in concurrent.futures.as_completed(future_to_question):
             result = future.result()
             if result:
@@ -257,6 +266,7 @@ def benchmark_claude(output_file=None, model=None):
     for question in json_questions:
         qid = question["question_id"]
         prompt = question["Prompt"]
+        ground_truth = question["Answer"]
         category = question["Category"]
 
         image_file_path = None
@@ -301,6 +311,7 @@ def benchmark_claude(output_file=None, model=None):
             )
 
             completion = extract_claude_text(response)
+            correct, reason = grade_completion(ground_truth, completion, prompt)
 
             result = {
                 "question_id": qid,
@@ -308,7 +319,8 @@ def benchmark_claude(output_file=None, model=None):
                 "Model": model,
                 "Prompt": prompt,
                 "Completion": completion,
-                "Correct": None,
+                "Correct": correct,
+                "Reason" : reason,
                 "Category": category
             }
 
@@ -327,6 +339,7 @@ def benchmark_claude(output_file=None, model=None):
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
+                "Reason" : None,
                 "Category": category
             }
 
@@ -345,8 +358,8 @@ def benchmark_claude(output_file=None, model=None):
     print(f"Saved results to {output_file}")
 
 def benchmark_qwen(output_file=None, model=None):
-    if output_file is None:
-        output_file = "../Answers/Qwen.json"
+    if model is None:
+        model = "qwen-vl-plus"
     if output_file is None:
         output_file = f"../Answers/{model}.json"             
 
@@ -366,6 +379,7 @@ def benchmark_qwen(output_file=None, model=None):
     for question in json_questions:
         qid = question["question_id"]
         prompt = question["Prompt"]
+        ground_truth = question["Answer"]
         category = question["Category"]
 
         image_file_path = None
@@ -424,6 +438,7 @@ def benchmark_qwen(output_file=None, model=None):
                 )
 
             completion = response.choices[0].message.content
+            correct, reason = grade_completion(ground_truth, completion, prompt)
 
             result = {
                 "question_id": qid,
@@ -431,7 +446,8 @@ def benchmark_qwen(output_file=None, model=None):
                 "Model": model,
                 "Prompt": prompt,
                 "Completion": completion,
-                "Correct": None,
+                "Correct" : correct,
+                "Reason" : reason,
                 "Category": category
             }
 
@@ -450,6 +466,7 @@ def benchmark_qwen(output_file=None, model=None):
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
+                "Reason" : None,
                 "Category": category
             }
 

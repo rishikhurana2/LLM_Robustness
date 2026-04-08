@@ -1937,188 +1937,189 @@
   },
   {
     "question_id": "301",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Count the total number of lines in the image, including blank lines between paragraphs.",
     "Answer" : "32"
   },
   {
     "question_id": "302",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the exact text of line 1 (including punctuation)?",
     "Answer" : "In a setting soon after Julius Caesar, Marc Antony is in love with Cleopatra, an Egyptian queen. What used to be a friendship between Emperor Octavius and Antony develops into a hatred as Antony rejects the Emperor's sister,"
   },
   {
     "question_id": "303",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the exact text of the last non-empty line in the image?",
     "Answer" : "full of hatred for humanity."
   },
   {
     "question_id": "304",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What word appears at the beginning of line 5?",
     "Answer" : "after an attempt at political office turns sour, he is banished from Rome as a"
   },
   {
     "question_id": "305",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What word appears at the end of line 10?",
     "Answer" : "After killing Caesar, however, Brutus fails to convince the people that his cause was"
   },
   {
     "question_id": "306",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains the first occurrence of the word 'suicide'? Return the line number.",
     "Answer" : "2"
   },
   {
     "question_id": "307",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "How many lines contain the word 'King' (case-sensitive)?",
     "Answer" : "7"
   },
   {
     "question_id": "308",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is written on the line immediately after the first blank line in the image?",
     "Answer" : "The Roman military leader Caius Martius, after leading Rome to several victories against the Volscians, returns home as a war hero with a new last name, Coriolanus, given for the city of Corioles which he conquered. However,"
   },
   {
     "question_id": "309",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains the phrase 'King Lear'? Return the exact line number.",
     "Answer" : "16"
   },
   {
     "question_id": "310",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What are the first three words of line 12?",
     "Answer" : "just, he, and"
   },
   {
     "question_id": "311",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What are the last three words of line 20?",
     "Answer" : "in, armed, combat"
   },
   {
     "question_id": "312",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "How many lines belong to the paragraph describing Hamlet?",
     "Answer" : "2"
   },
   {
     "question_id": "313",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains the first mention of 'Romeo'? Provide the full line text.",
     "Answer" : "In Verona, Italy, two families, the Montagues and the Capulets, are in the midst of a bloody feud. Romeo, a Montague, and Juliet, a Capulet, fall in love and struggle to maintain their relationship in the face of familial"    
   },
   {
     "question_id": "314",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "How many blank lines are present in the image?",
     "Answer" : "9"
   },
   {
     "question_id": "315",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the exact text of the second line of the Macbeth paragraph?",
     "Answer" : "is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff"
   },
   {
     "question_id": "316",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains both the words 'Cassius' and 'Brutus'?",
     "Answer" : "11"
   },
   {
     "question_id": "317",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the index (line number) of the shortest non-empty line?",
     "Answer" : "32"
   },
   {
     "question_id": "318",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "How many lines contain at least one comma?",
     "Answer" : "19"
   },
   {
     "question_id": "319",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
-    "Prompt": "What is written on the line immediately before the paragraph that begins with 'Othello'?"
+    "Prompt": "What is written on the line immediately before the paragraph that begins with 'Othello'?",
+    "Answer" : "\n"
   },
   {
     "question_id": "320",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains the word 'Venice'? Return the full line.",
     "Answer" : "Othello, a Moor and military general living in Venice, elopes with Desdemona, the daughter of a senator. Later, in Cyprus, he is persuaded by his servant Iago that his wife (Desdemona) is having an affair with Michael Cassio"
   },
   {
     "question_id": "321",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "How many lines contain the word 'and' at least twice?",
     "Answer" : "6"
   },
   {
     "question_id": "322",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the exact middle line of the image (if odd number of lines), or the earlier of the two middle lines (if even)?",
     "Answer" : "after Cordelia has been captured and murdered. King Lear then dies of grief."
   },
   {
     "question_id": "323",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "Which line contains the phrase 'ghost'? Provide the line number and exact text.",
     "Answer" : "Line Number: 8. Text: Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether"
   },
   {
     "question_id": "324",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the difference between the number of lines in the first paragraph and the last paragraph?",
     "Answer" : "1"
   },
   {
     "question_id": "325",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the first word of the line that contains 'Tybalt'?",
     "Answer" : "hatred"
   },
   {
     "question_id": "326",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is written on the second-to-last non-empty line?",
     "Answer" : "the same day. Timon asks for his friends to help, but is refused. Angry at mankind's double nature, he leaves the city for the wilderness, and lives in a cave. Despite the efforts of several men to cheer his spirits, he dies"
   },
   {
     "question_id": "327",
-    "image_file_path": "qid301.png",
+    "image_file_path": "input_images/qid301.png",
     "Category": "Visual Text Understanding",
     "Prompt": "What is the exact text of the first line after the 'King Lear' paragraph ends?",
     "Answer" : "\n"
