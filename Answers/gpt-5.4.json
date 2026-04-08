@@ -3140,7 +3140,7 @@
         "Category": "Nonsense"
     },
     {
-        "question_id": "301",
+        "question_id": 301,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Count the total number of lines in the image, including blank lines between paragraphs.",
@@ -3151,7 +3151,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "302",
+        "question_id": 302,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the exact text of line 1 (including punctuation)?",
@@ -3162,7 +3162,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "303",
+        "question_id": 303,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the exact text of the last non-empty line in the image?",
@@ -3173,7 +3173,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "304",
+        "question_id": 304,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What word appears at the beginning of line 5?",
@@ -3184,7 +3184,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "305",
+        "question_id": 305,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What word appears at the end of line 10?",
@@ -3195,7 +3195,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "306",
+        "question_id": 306,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains the first occurrence of the word 'suicide'? Return the line number.",
@@ -3206,7 +3206,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "307",
+        "question_id": 307,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "How many lines contain the word 'King' (case-sensitive)?",
@@ -3217,7 +3217,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "308",
+        "question_id": 308,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is written on the line immediately after the first blank line in the image?",
@@ -3228,7 +3228,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "309",
+        "question_id": 309,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains the phrase 'King Lear'? Return the exact line number.",
@@ -3239,7 +3239,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "310",
+        "question_id": 310,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What are the first three words of line 12?",
@@ -3250,7 +3250,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "311",
+        "question_id": 311,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What are the last three words of line 20?",
@@ -3261,7 +3261,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "312",
+        "question_id": 312,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "How many lines belong to the paragraph describing Hamlet?",
@@ -3272,7 +3272,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "313",
+        "question_id": 313,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains the first mention of 'Romeo'? Provide the full line text.",
@@ -3283,7 +3283,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "314",
+        "question_id": 314,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "How many blank lines are present in the image?",
@@ -3294,7 +3294,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "315",
+        "question_id": 315,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the exact text of the second line of the Macbeth paragraph?",
@@ -3305,7 +3305,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "316",
+        "question_id": 316,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains both the words 'Cassius' and 'Brutus'?",
@@ -3316,7 +3316,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "317",
+        "question_id": 317,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the index (line number) of the shortest non-empty line?",
@@ -3327,7 +3327,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "318",
+        "question_id": 318,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "How many lines contain at least one comma?",
@@ -3338,7 +3338,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "319",
+        "question_id": 319,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is written on the line immediately before the paragraph that begins with 'Othello'?",
@@ -3349,7 +3349,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "320",
+        "question_id": 320,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains the word 'Venice'? Return the full line.",
@@ -3360,7 +3360,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "321",
+        "question_id": 321,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "How many lines contain the word 'and' at least twice?",
@@ -3371,7 +3371,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "322",
+        "question_id": 322,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the exact middle line of the image (if odd number of lines), or the earlier of the two middle lines (if even)?",
@@ -3382,7 +3382,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "323",
+        "question_id": 323,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "Which line contains the phrase 'ghost'? Provide the line number and exact text.",
@@ -3393,7 +3393,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "324",
+        "question_id": 324,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the difference between the number of lines in the first paragraph and the last paragraph?",
@@ -3404,7 +3404,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "325",
+        "question_id": 325,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the first word of the line that contains 'Tybalt'?",
@@ -3415,7 +3415,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "326",
+        "question_id": 326,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is written on the second-to-last non-empty line?",
@@ -3426,7 +3426,7 @@
         "image_file_path": "input_images/qid301.png"
     },
     {
-        "question_id": "327",
+        "question_id": 327,
         "LLM": "ChatGPT",
         "Model": "gpt-5.4",
         "Prompt": "What is the exact text of the first line after the 'King Lear' paragraph ends?",
