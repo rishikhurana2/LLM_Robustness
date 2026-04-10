@@ -12,11 +12,11 @@ from helpers import (
     grade_completion
 )    
 
-def benchmark_openai(output_file=None, model=None, questions_json_file="../questions.json"):
+def benchmark_openai(output_file=None, model=None, questions_json_file="../Questions/questions.json"):
     if model is None:
         model = "gpt-5.4"
     if output_file is None:
-        output_file = f"../Answers/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"             
 
     from openai import OpenAI
 
@@ -125,11 +125,11 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../quest
     print(f"Saved results to {output_file}")
 
 # Needed parallelizing because it was too slow
-def benchmark_gemini(output_file=None, model=None, questions_json_file="../questions.json"):
+def benchmark_gemini(output_file=None, model=None, questions_json_file="../Questions/questions.json"):
     if model is None:
         model = "gemini-3-flash-preview"
     if output_file is None:
-        output_file = f"../Answers/{model}.json"        
+        output_file = f"../Answers/Answers-FRQ/{model}.json"        
 
     from google import genai
 
@@ -248,11 +248,11 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../quest
     print(f"Saved results to {output_file}")
     
 
-def benchmark_claude(output_file=None, model=None, questions_json_file="../questions.json"):
+def benchmark_claude(output_file=None, model=None, questions_json_file="../Questions/questions.json"):
     if model is None:
         model = "claude-sonnet-4-6"
     if output_file is None:
-        output_file = f"../Answers/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"             
 
     import anthropic
 
@@ -357,11 +357,11 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../quest
 
     print(f"Saved results to {output_file}")
 
-def benchmark_qwen(output_file=None, model=None, questions_json_file="../questions.json"):
+def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questions/questions.json"):
     if model is None:
         model = "qwen-vl-plus"
     if output_file is None:
-        output_file = f"../Answers/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"             
 
     from openai import OpenAI
 
