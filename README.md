@@ -25,7 +25,7 @@ OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, DASHSCOPE_API_KEY
 Then, run the following:
 ```bash
 cd src
-python3 main.py --llm [llm] --output [file location] --model [model]
+python3 main.py --llm [llm] --output [file location] --model [model] --benchmark [benchmark file]
 ```
 LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag is optional and only specify it if you do not want to save benchmark outputs in the default directory. 
 
@@ -38,7 +38,9 @@ Qwen: qwen-vl-plus
 
 Ensure to reference API documentations if you wish to change the models (and ensure use the API names).
 
-Ensure you have a FailBench/Answers folder to store the output of the benchmarks. If you want to store the answers elsewhere, be sure to add an argument for the --output flag.
+The benchmark file is the file you would like to use to test the selected llm. As of now, there is questions.json and questions_mc.json in the repo. questions.json is the baseline questions to test the LLMs one with natural language as the ground truth for most of them. questions_mc.json changes these baseline questions to an mc format.
+
+Also ensure you have a FailBench/Answers folder to store the output of the benchmarks. If you want to store the answers elsewhere, be sure to add an argument for the --output flag.
 
 ## References
 
