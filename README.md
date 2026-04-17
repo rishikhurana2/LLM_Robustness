@@ -45,3 +45,5 @@ Also ensure you have a FailBench/Answers folder to store the output of the bench
 ## References
 
 Inspiration for the Nonsense questions came from: [Benchmark for Nonsense Questions](https://petergpt.github.io/bullshit-benchmark/viewer/index.v2.html)
+
+Technique for Improving Spatial/Image Analysis at inference-time: https://github.com/AntResearchNLP/ViLaSR
