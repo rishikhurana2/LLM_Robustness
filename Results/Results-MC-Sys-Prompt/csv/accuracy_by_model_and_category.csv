@@ -1,0 +1,8 @@
+Category_norm,Model,accuracy,n,percent_correct
+Commonsense,gpt-5.4,0.7,10,70.0
+Logic,gpt-5.4,0.8,20,80.0
+Nonsense,gpt-5.4,1.0,15,100.0
+Spatial Counting,gpt-5.4,0.4,15,40.0
+Spatial Relations,gpt-5.4,0.7333333333333333,15,73.33333333333333
+Spatial Visualization,gpt-5.4,0.5,4,50.0
+Visual Text Understanding,gpt-5.4,0.7142857142857143,21,71.42857142857143

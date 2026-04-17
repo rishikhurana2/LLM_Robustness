@@ -9,14 +9,15 @@ from helpers import (
     encode_image_as_data_url,
     encode_image_for_claude,
     extract_claude_text,
-    grade_completion
-)    
+    grade_completion,
+    get_image_system_prompt
+)
 
 def benchmark_openai(output_file=None, model=None, questions_json_file="../Questions/questions-frq.json"):
     if model is None:
         model = "gpt-5.4"
     if output_file is None:
-        output_file = f"../Answers/Answers-FRQ/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"
 
     from openai import OpenAI
 
@@ -43,12 +44,14 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../Quest
         if "txt_file_path" in question and question["txt_file_path"]:
             txt_file_path = "../" + question["txt_file_path"]
 
+        image_system_prompt = get_image_system_prompt(image_file_path)
+
         try:
             if image_file_path is None and txt_file_path is None:
-                response = client.responses.create(
-                    model=model,
-                    input=prompt
-                )
+                request_kwargs = {
+                    "model": model,
+                    "input": prompt
+                }
             else:
                 content = []
 
@@ -72,10 +75,15 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../Quest
                         "image_url": data_url
                     })
 
-                response = client.responses.create(
-                    model=model,
-                    input=[{"role": "user", "content": content}]
-                )
+                request_kwargs = {
+                    "model": model,
+                    "input": [{"role": "user", "content": content}]
+                }
+
+            if image_system_prompt is not None:
+                request_kwargs["instructions"] = image_system_prompt
+
+            response = client.responses.create(**request_kwargs)
 
             completion = response.output_text
             correct, reason = grade_completion(ground_truth, completion, prompt)
@@ -87,7 +95,7 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": completion,
                 "Correct": correct,
-                "Reason" : reason,
+                "Reason": reason,
                 "Category": category
             }
 
@@ -106,7 +114,7 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
-                "Reason" : None,
+                "Reason": None,
                 "Category": category
             }
 
@@ -124,14 +132,14 @@ def benchmark_openai(output_file=None, model=None, questions_json_file="../Quest
 
     print(f"Saved results to {output_file}")
 
-# Needed parallelizing because it was too slow
 def benchmark_gemini(output_file=None, model=None, questions_json_file="../Questions/questions-frq.json"):
     if model is None:
         model = "gemini-3-flash-preview"
     if output_file is None:
-        output_file = f"../Answers/Answers-FRQ/{model}.json"        
+        output_file = f"../Answers/Answers-FRQ/{model}.json"
 
     from google import genai
+    from google.genai import types
 
     load_dotenv()
 
@@ -155,13 +163,12 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../Quest
         if "txt_file_path" in question and question["txt_file_path"]:
             txt_file_path = "../" + question["txt_file_path"]
 
+        image_system_prompt = get_image_system_prompt(image_file_path)
         uploaded_files = []
 
         try:
             contents = []
 
-            # Keep the structure similar to your OpenAI version:
-            # optional txt file, then prompt, then optional image
             if txt_file_path is not None:
                 txt_file = client.files.upload(file=Path(txt_file_path))
                 uploaded_files.append(txt_file)
@@ -174,10 +181,17 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../Quest
                 uploaded_files.append(image_file)
                 contents.append(image_file)
 
-            response = client.models.generate_content(
-                model=model,
-                contents=contents,
-            )
+            request_kwargs = {
+                "model": model,
+                "contents": contents,
+            }
+
+            if image_system_prompt is not None:
+                request_kwargs["config"] = types.GenerateContentConfig(
+                    system_instruction=image_system_prompt
+                )
+
+            response = client.models.generate_content(**request_kwargs)
 
             completion = response.text
             correct, reason = grade_completion(ground_truth, completion, prompt)
@@ -189,7 +203,7 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": completion,
                 "Correct": correct,
-                "Reason" : reason,
+                "Reason": reason,
                 "Category": category,
             }
 
@@ -207,7 +221,7 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
-                "Reason" : None,
+                "Reason": None,
                 "Category": category,
             }
 
@@ -216,43 +230,39 @@ def benchmark_gemini(output_file=None, model=None, questions_json_file="../Quest
 
             if "txt_file_path" in question:
                 result["txt_file_path"] = question["txt_file_path"]
-            
+
         finally:
-            # Optional cleanup so uploaded files don't pile up in Gemini Files API
             for f in uploaded_files:
                 try:
                     client.files.delete(name=f.name)
                 except Exception:
                     pass
-            
+
         return result
-    
+
     results = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        # Add to thread pool
         future_to_question = {
-            executor.submit(process_single_question_gemini, q): q 
+            executor.submit(process_single_question_gemini, q): q
             for q in json_questions
         }
-        
-        # Grab the result
+
         for future in concurrent.futures.as_completed(future_to_question):
             result = future.result()
             if result:
                 results.append(result)
                 print(f"Finished question {result['question_id']}")
-                
+
                 with open(output_file, "w", encoding="utf-8") as f:
                     json.dump(results, f, indent=4, ensure_ascii=False)
 
     print(f"Saved results to {output_file}")
-    
 
 def benchmark_claude(output_file=None, model=None, questions_json_file="../Questions/questions-frq.json"):
     if model is None:
         model = "claude-sonnet-4-6"
     if output_file is None:
-        output_file = f"../Answers/Answers-FRQ/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"
 
     import anthropic
 
@@ -278,10 +288,11 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../Quest
         if "txt_file_path" in question and question["txt_file_path"]:
             txt_file_path = "../" + question["txt_file_path"]
 
+        image_system_prompt = get_image_system_prompt(image_file_path)
+
         try:
             content = []
 
-            # Put long context first
             if txt_file_path is not None:
                 with open(txt_file_path, "r", encoding="utf-8") as f:
                     file_txt = f.read()
@@ -290,7 +301,6 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../Quest
                     "text": file_txt
                 })
 
-            # Anthropic recommends image before the text question when possible
             if image_file_path is not None:
                 content.append(encode_image_for_claude(image_file_path))
 
@@ -299,16 +309,21 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../Quest
                 "text": prompt
             })
 
-            response = client.messages.create(
-                model=model,
-                max_tokens=1024,
-                messages=[
+            request_kwargs = {
+                "model": model,
+                "max_tokens": 1024,
+                "messages": [
                     {
                         "role": "user",
                         "content": content if content else prompt
                     }
                 ],
-            )
+            }
+
+            if image_system_prompt is not None:
+                request_kwargs["system"] = image_system_prompt
+
+            response = client.messages.create(**request_kwargs)
 
             completion = extract_claude_text(response)
             correct, reason = grade_completion(ground_truth, completion, prompt)
@@ -320,7 +335,7 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": completion,
                 "Correct": correct,
-                "Reason" : reason,
+                "Reason": reason,
                 "Category": category
             }
 
@@ -339,7 +354,7 @@ def benchmark_claude(output_file=None, model=None, questions_json_file="../Quest
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
-                "Reason" : None,
+                "Reason": None,
                 "Category": category
             }
 
@@ -361,7 +376,7 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
     if model is None:
         model = "qwen-vl-plus"
     if output_file is None:
-        output_file = f"../Answers/Answers-FRQ/{model}.json"             
+        output_file = f"../Answers/Answers-FRQ/{model}.json"
 
     from openai import OpenAI
 
@@ -373,7 +388,6 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
     )
 
     json_questions = get_questions(questions_json_file)
-
     results = []
 
     for question in json_questions:
@@ -391,17 +405,22 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
         if "txt_file_path" in question and question["txt_file_path"]:
             txt_file_path = "../" + question["txt_file_path"]
 
+        image_system_prompt = get_image_system_prompt(image_file_path)
+
         try:
+            messages = []
+
+            if image_system_prompt is not None:
+                messages.append({
+                    "role": "system",
+                    "content": image_system_prompt
+                })
+
             if image_file_path is None and txt_file_path is None:
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": prompt
-                        }
-                    ],
-                )
+                messages.append({
+                    "role": "user",
+                    "content": prompt
+                })
             else:
                 content = []
 
@@ -427,15 +446,15 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
                         }
                     })
 
-                response = client.chat.completions.create(
-                    model=model,
-                    messages=[
-                        {
-                            "role": "user",
-                            "content": content
-                        }
-                    ],
-                )
+                messages.append({
+                    "role": "user",
+                    "content": content
+                })
+
+            response = client.chat.completions.create(
+                model=model,
+                messages=messages,
+            )
 
             completion = response.choices[0].message.content
             correct, reason = grade_completion(ground_truth, completion, prompt)
@@ -446,8 +465,8 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
                 "Model": model,
                 "Prompt": prompt,
                 "Completion": completion,
-                "Correct" : correct,
-                "Reason" : reason,
+                "Correct": correct,
+                "Reason": reason,
                 "Category": category
             }
 
@@ -466,7 +485,7 @@ def benchmark_qwen(output_file=None, model=None, questions_json_file="../Questio
                 "Prompt": prompt,
                 "Completion": f"ERROR: {str(e)}",
                 "Correct": None,
-                "Reason" : None,
+                "Reason": None,
                 "Category": category
             }
 

@@ -33,7 +33,7 @@ def main():
 
     parser.add_argument(
         "--benchmark",
-        default="../questions.json",
+        default="../Questions/questions-mc.json",
         help="Input JSON file to benchmark the model. Default is questions.json.",
     )
 

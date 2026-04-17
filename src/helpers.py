@@ -64,6 +64,45 @@ def extract_boolean(s):
         return False
     return None
 
+def get_image_system_prompt(image_file_path):
+    """
+    Return IMAGE_SYS_PROMPT only when an image is present.
+    Fills in {width} and {height} if possible.
+    """
+    IMAGE_SYS_PROMPT = """### Guidance:
+    After your reasoning and iteratively refine your solution through visualization feedback, you should arrive at a final answer and structure your response as follows:
+    <think> [Your detailed reasoning process] </think> Action: Answer
+    <answer> [Your final answer] </answer>
+
+    ### Please NOTE the following reasoning techniques:
+    1. Initial Analysis
+    - Break down the spatial problem
+    - Plan your approach
+
+    2. Iterative Reasoning for Each Step
+    - Choose appropriate tool
+    - Provide absolute coordinates in JSON format (The top-left corner of the image is (0, 0) and the bottom-right corner is ({width}, {height}))
+    - Observe the visualization output
+    - Reflect on the visualization:
+        * Is the placement/path accurate?
+        * Does it align with your reasoning?
+        * What adjustments are needed?
+    - Backtrack and Adjust:
+        * If errors found, backtrack to previous step to modify actions or decisions as needed"""    
+    if image_file_path is None:
+        return None
+
+    try:
+        from PIL import Image
+        with Image.open(image_file_path) as img:
+            width, height = img.size
+        return IMAGE_SYS_PROMPT.format(width=width, height=height)
+    except Exception:
+        # Fallback if Pillow isn't installed or image can't be opened
+        return IMAGE_SYS_PROMPT.format(width="image_width", height="image_height")
+
+
+
 # Function that grades LLM responses
 def grade_completion(ground_truth, completion, prompt, judge_model="gpt-5.4"):
     """
