@@ -1,8 +1,0 @@
-Model,Category_norm,Right,Wrong,n,right_pct,wrong_pct
-gpt-5.4,Commonsense,7.0,3.0,10.0,70.0,30.0
-gpt-5.4,Logic,16.0,4.0,20.0,80.0,20.0
-gpt-5.4,Nonsense,15.0,0.0,15.0,100.0,0.0
-gpt-5.4,Spatial Counting,6.0,9.0,15.0,40.0,60.0
-gpt-5.4,Spatial Relations,11.0,4.0,15.0,73.33333333333333,26.666666666666668
-gpt-5.4,Spatial Visualization,2.0,2.0,4.0,50.0,50.0
-gpt-5.4,Visual Text Understanding,15.0,6.0,21.0,71.42857142857143,28.57142857142857
