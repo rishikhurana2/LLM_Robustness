@@ -1,5 +1,4 @@
 Model,accuracy,n,percent_correct
-gemini-3-flash-preview,0.7373737373737373,99,73.73737373737373
 gemini-3.1-flash-lite-preview,0.7,100,70.0
 claude-sonnet-4-6,0.61,100,61.0
 gpt-5.4,0.6,100,60.0

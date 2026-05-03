@@ -258,6 +258,26 @@ def save_category_accuracies(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
     return summary
 
 def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
+    category_order = [
+        "Commonsense",
+        "Logic",
+        "Nonsense",
+        "Spatial Counting",
+        "Spatial Relations",
+        "Spatial Visualization",
+        "Visual Text Understanding",
+    ]
+
+    display_labels = [
+        "Commonsense",
+        "Logic",
+        "Nonsense",
+        "Spatial\nCounting",
+        "Spatial\nRelations",
+        "Spatial\nVisualization",
+        "Visual Text\nUnderstanding",
+    ]
+
     summary = (
         df.groupby(["Model", "Category_norm", "Outcome"], as_index=False)
         .size()
@@ -284,36 +304,73 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
     pivot["wrong_pct"] = (pivot["Wrong"] / pivot["n"] * 100).fillna(0)
 
     for model, model_df in pivot.groupby("Model"):
-        model_df = model_df.sort_values(["right_pct", "Category_norm"], ascending=[False, True]).reset_index(drop=True)
+        # Reorder categories exactly as requested
+        model_df = (
+            model_df.set_index("Category_norm")
+            .reindex(category_order)
+            .reset_index()
+        )
 
-        fig_height = max(4.5, 0.6 * len(model_df) + 1.5)
-        plt.figure(figsize=(12, fig_height))
+        # Fill any missing categories with zeros
+        model_df["Model"] = model
+        model_df[["Right", "Wrong", "n", "right_pct", "wrong_pct"]] = (
+            model_df[["Right", "Wrong", "n", "right_pct", "wrong_pct"]].fillna(0)
+        )
 
-        y_positions = range(len(model_df))
-        plt.barh(y_positions, model_df["right_pct"], label="Right")
-        plt.barh(y_positions, model_df["wrong_pct"], left=model_df["right_pct"], label="Wrong")
+        plt.figure(figsize=(16, 7))
 
-        plt.yticks(list(y_positions), model_df["Category_norm"])
-        plt.xlabel("Percent of questions in category")
-        plt.ylabel("Category")
-        plt.title(f"Category Right/Wrong Breakdown — {model}")
-        plt.xlim(0, 100)
-        plt.legend()
+        # Add more horizontal spacing between bars
+        x_positions = [i * 1.35 for i in range(len(model_df))]
 
+        # Slightly narrower bars to create visible gaps
+        plt.bar(x_positions, model_df["right_pct"], width=0.75)
+
+        fontsize = 17
+
+        plt.xticks(
+            x_positions,
+            display_labels,
+            rotation=0,
+            ha="center",
+            fontsize=fontsize,
+        )
+        plt.yticks(fontsize=14)
+
+        plt.ylabel("Accuracy (%)", fontsize=fontsize + 2)
+        plt.xlabel("Category", fontsize=fontsize + 2, labelpad=18)
+        plt.title(
+            f"Accuracy by Category — {model}",
+            fontweight="normal",
+            fontsize=24,
+            pad=34,
+        )
+
+        # Extra room above 100% so labels don't hit the title
+        plt.ylim(0, 100)
+
+        plt.grid(axis="y", linestyle="--", alpha=0.6)
+
+        # Put value labels above each bar
         for i, row in model_df.iterrows():
-            right_pct = float(row["right_pct"])
-            wrong_pct = float(row["wrong_pct"])
-            n = int(row["n"])
+            pct = float(row["right_pct"])
+            plt.text(
+                x_positions[i],
+                pct + 1.5,
+                f"{pct:.1f}%",
+                ha="center",
+                va="bottom",
+                fontsize=fontsize,
+            )
 
-            if right_pct >= 8:
-                plt.text(right_pct / 2, i, f"{right_pct:.1f}%", ha="center", va="center", fontsize=9)
-            if wrong_pct >= 8:
-                plt.text(right_pct + wrong_pct / 2, i, f"{wrong_pct:.1f}%", ha="center", va="center", fontsize=9)
-
-            plt.text(101, i, f"n={n}", ha="left", va="center", fontsize=9)
+        # Extra bottom margin for wrapped x-axis labels
+        plt.subplots_adjust(bottom=0.18)
 
         plt.tight_layout()
-        plt.savefig(out_dir / f"{slugify(model)}_category_outcomes_stacked.png", dpi=200, bbox_inches="tight")
+        plt.savefig(
+            out_dir / f"{slugify(model)}_category_accuracy_histogram.png",
+            dpi=200,
+            bbox_inches="tight",
+        )
         plt.close()
 
     return pivot[["Model", "Category_norm", "Right", "Wrong", "n", "right_pct", "wrong_pct"]]
