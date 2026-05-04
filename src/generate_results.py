@@ -317,7 +317,7 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
             model_df[["Right", "Wrong", "n", "right_pct", "wrong_pct"]].fillna(0)
         )
 
-        plt.figure(figsize=(16, 7))
+        plt.figure(figsize=(23, 7))
 
         # Add more horizontal spacing between bars
         x_positions = [i * 1.35 for i in range(len(model_df))]
@@ -325,7 +325,7 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
         # Slightly narrower bars to create visible gaps
         plt.bar(x_positions, model_df["right_pct"], width=0.75)
 
-        fontsize = 17
+        fontsize = 30
 
         plt.xticks(
             x_positions,
@@ -337,11 +337,11 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
         plt.yticks(fontsize=14)
 
         plt.ylabel("Accuracy (%)", fontsize=fontsize + 2)
-        plt.xlabel("Category", fontsize=fontsize + 2, labelpad=18)
+        plt.xlabel("Category", fontsize=fontsize + 4, labelpad=18)
         plt.title(
             f"Accuracy by Category — {model}",
             fontweight="normal",
-            fontsize=24,
+            fontsize=fontsize + 4,
             pad=34,
         )
 
@@ -359,7 +359,7 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
                 f"{pct:.1f}%",
                 ha="center",
                 va="bottom",
-                fontsize=fontsize,
+                fontsize=fontsize - 9,
             )
 
         # Extra bottom margin for wrapped x-axis labels
